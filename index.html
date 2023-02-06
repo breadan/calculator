@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="input-1" class="container fw-bold mt-5 bg-light w-25 text-center text-capitalize"></p>
+
+    <!-- Q1 -->
+    <div class="container py-4">
+        <label for="productName"> enter number</label>
+        <input type="number" class="form-control mb-3" name="productName" id="productNum">
+    </div>
+    <button onclick="addNum()" class="  btn btn-outline-info" type="">add product</button>
+
+    <!-- Q2 -->
+    <br><br>
+    <hr>
+
+    <p class="container text-capitalize">check number q2</p>
+
+    <div class="container">
+        <input type="number" id="numCheck" placeholder="Enter To Check" />
+
+        <div>
+            <input type="button" value="calculate degree" onclick="check();" class="mt-2">
+
+        </div>
+        <!-- to show -->
+        <p id="checkResult" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+
+    </div>
+
+    <!-- Q3 -->
+    <br><br>
+    <hr>
+    <p class="container text-capitalize">compare numbers q3</p>
+    <div class="container">
+        <input type="number" id="num1" placeholder="Enter To Check num1" />
+        <input type="number" id="num2" placeholder="Enter To Check num2" />
+
+        <div>
+            <input type="button" value="calculate max" onclick="calcMax()" class="mt-2">
+        </div>
+        <!-- to show -->
+        <p id="maxNum" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+    </div>
+
+    <!-- Q4 -->
+    <br><br>
+    <hr>
+    <p class="container text-capitalize">check pos or neg q4</p>
+
+    <div class="container">
+        <input type="number" id="posOrNeg" placeholder="Enter To Check" />
+
+        <div>
+            <input type="button" value="calculate degree" onclick="check2();" class="mt-2">
+
+        </div>
+        <!-- to show -->
+        <p id="posOrNegResult" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+
+    </div>
+
+    <!-- Q5 -->
+    <br><br>
+    <hr>
+    <p class="container text-capitalize">compare numbers q5</p>
+    <div class="container">
+        <input type="number" id="number1" placeholder="Enter To Check num1" />
+        <input type="number" id="number2" placeholder="Enter To Check num2" />
+        <input type="number" id="number3" placeholder="Enter To Check num2" />
+
+
+        <div>
+            <input type="button" value="calculate max" onclick="checks()" class="mt-2">
+        </div>
+        <!-- to show -->
+        <p id="maxNumber" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+    </div>
+
+    <!-- Q6 -->
+    <br><br>
+    <hr>
+    <p class="container text-capitalize">even or odd q6</p>
+    <div class="container">
+        <input type="number" id="evenOdd" placeholder="Enter To Check num1" />
+        <div>
+            <input type="button" value="Result" onclick="evenOdds()" class="mt-2">
+        </div>
+        <!-- to show -->
+        <p id="evenOddRes" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+    </div>
+
+    <!-- Q8 -->
+    <br><br>
+    <hr>
+    <p class="container text-capitalize">check vowel otherwise consonant q8</p>
+    <div class="container">
+        <input type="text" id="character" placeholder="Enter To Check character" />
+        <div>
+            <input type="button" value="characterType" onclick="char()" class="mt-2">
+        </div>
+        <!-- to show -->
+        <p id="characterType" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+    </div>
+
+    <!-- Q9 -->
+    <br><br>
+    <hr>
+    <p class="container text-capitalize">print Numbers from 1 to num q9</p>
+    <div class="container">
+        <input type="number" id="num" placeholder="Enter To print Numbers" />
+        <div>
+            <input type="button" value="print Numbers" onclick="printNumbs()" class="mt-2">
+        </div>
+        <!-- to show -->
+        <p id="printNum" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+    </div>
+
+    <!-- Q10 -->
+    <br><br>
+    <hr>
+    <p class="container text-capitalize">print multiplication Numbers q10</p>
+    <div class="container">
+        <input type="number" id="multiplication" placeholder="Enter To print Numbers" />
+        <div>
+            <input type="button" value="print multiplication Numbers" onclick="multiplication()" class="mt-2">
+        </div>
+        <!-- to show -->
+        <p id="printmultiplication" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+    </div>
+
+    <!-- Q11 -->
+    <br><br>
+    <hr>
+    <p class="container text-capitalize">print even Numbers q11</p>
+    <div class="container">
+        <input type="number" id="printEven" placeholder="Enter To print Numbers" />
+        <div>
+            <input type="button" value="print even Numbers" onclick="printEvenNumbs()" class="mt-2">
+        </div>
+        <!-- to show -->
+        <p id="printEvenRes" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+    </div>
+
+    <!-- Q12 -->
+    <br><br>
+    <hr>
+    <p class="container text-capitalize">power number q12</p>
+    <div class="container">
+        <input type="number" id="base" placeholder="Enter base Number" />
+        <input type="number" id="power" placeholder="Enter power Number" />
+
+        <div>
+            <input type="button" value="calculate power" onclick="calcPower()" class="mt-2">
+        </div>
+        <!-- to show -->
+        <p id="powerBase" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+    </div>
+
+    <!-- Q13 -->
+    <br><br>
+    <hr>
+    <p class="container text-capitalize ">calc average and percentage q13 error calc avg</p>
+    <div class="container">
+        <input type="number" id="avg1" placeholder="Enter Number" />
+        <input type="number" id="avg2" placeholder="Enter Number" />
+        <input type="number" id="avg3" placeholder="Enter Number" />
+        <input type="number" id="avg4" placeholder="Enter Number" />
+        <input type="number" id="avg5" placeholder="Enter Number" />
+
+
+        <div>
+            <input type="button" value="calculate Total" onclick="calcSum()" class="mt-2">
+            <input type="button" value="calculate Avg" onclick="calcuAvg()" class="mt-2">
+
+        </div>
+        <!-- to show -->
+        <p id="resTotal" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+        <p id="resAvg" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+    </div>
+
+    <!-- Q14 -->
+    <br><br>
+    <hr>
+    <p class="container text-capitalize">Days of month q14</p>
+    <div class="container">
+        <input type="number" id="printDays" placeholder="Enter To calc Days" />
+        <div>
+            <input type="button" value="Days" onclick="Days()" class="mt-2">
+        </div>
+        <!-- to show -->
+        <p id="printDaysRes" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+    </div>
+
+    <hr>
+    <hr>
+    <p id="input-2" class="container fw-bold mt-5 bg-light w-25 text-center text-capitalize"></p>
+
+    <!-- َ15 -->
+    <p class="container text-capitalize ">calc days of month</p>
+    <div class="container">
+        <input type="number" id="case" placeholder="Enter Number" />
+        <div>
+            <input type="button" value="calculate Days" onclick="calcDays()" class="mt-2">
+        </div>
+
+        <p id="resCase" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+    </div>
+
+    <!-- َ16 -->
+    <br><br>
+    <hr>
+    <p class="container text-capitalize ">kind of char</p>
+    <div class="container">
+        <input type="text" id="char2" placeholder="Enter Number" />
+        <div>
+            <input type="button" value="kind of char" onclick="kindChar()" class="mt-2">
+        </div>
+
+        <p id="kindChar" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+    </div>
+
+    <!-- َ17 -->
+    <br><br>
+    <hr>
+    <p class="container text-capitalize ">max of num</p>
+    <div class="container">
+        <input type="number" id="numMax" placeholder="Enter Number" />
+        <input type="number" id="numMax2" placeholder="Enter Number" />
+
+        <div>
+            <input type="button" value="kind of num" onclick="maxNum()" class="mt-2">
+        </div>
+
+        <p id="resn" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+    </div>
+
+    <!-- َ18 -->
+    <br><br>
+    <hr>
+    <p class="container text-capitalize ">even or odd switch</p>
+    <div class="container">
+        <input type="number" id="even2" placeholder="Enter Number" />
+        <div>
+            <input type="button" value="kind of num" onclick="kindNum()" class="mt-2">
+        </div>
+
+        <p id="resNum" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+    </div>
+
+    <!-- َ19 -->
+    <br><br>
+    <hr>
+    <p class="container text-capitalize ">neg or odd pos switch</p>
+    <div class="container">
+        <input type="number" id="posNeg" placeholder="Enter Number" />
+        <div>
+            <input type="button" value="kind of num" onclick="posNeg()" class="mt-2">
+        </div>
+
+        <p id="resNeg" style="font-size:25px ; color:rgb(6, 7, 7); font-weight:bolder;"></p>
+    </div>
+
+
+    <!-- Q 20 -->
+    <br><br>
+    <hr>
+    <div class="main bg-light text-center w-75  m-auto p-2 container">
+        <div>
+            <input type="text" name="textView" class="textView w-100" id="calco">
+        </div> <br>
+        <div class="clearFix row p-2">
+            <div class="col-3">
+                <input type="button" value="C" onclick="clean()" class="button  bg-danger text-white border-danger">
+            </div>
+            <div class="col-3">
+                <input type="button" value="&#8756;" onclick="insert('%')" class="button  text-bg-primary text-white border-info fs-1 leads">
+            </div>
+            <div class="col-3">
+                <input type="button" value="del" onclick="del()" class=" button text-bg-info text-white border-info fs-1 leads">
+            </div>
+            <div class="col-3">
+                <input type="button" value="&#247;"onclick="insert('/')" class="button  text-bg-primary text-white border-info fs-1 leads">
+            </div>
+        </div>
+        <div class="clearFix  row p-2">
+            <div class="col-3">
+                <input type="button" value="7" class="button" onclick="insert(7);">
+            </div>
+            <div class="col-3">
+                <input type="button" value="8" class="button" onclick="insert(8)";>
+            </div>
+            <div class="col-3">
+                <input type="button" value="9" class="button" onclick="insert(9)";>
+            </div>
+            <div class="col-3">
+                <input type="button" value="&#215;" class="button  text-bg-primary text-white border-info fs-1 leads" onclick="insert('*')";>
+            </div>
+        </div>
+        <div class="clearFix  row p-2">
+            <div class="col-3">
+                <input type="button" value="4" class="button" onclick="insert(4)";>
+            </div>
+            <div class="col-3">
+                <input type="button" value="5" class="button" onclick="insert(5)";>
+            </div>
+            <div class="col-3">
+                <input type="button" value="6" class="button" onclick="insert(6)";>
+            </div>
+            <div class="col-3">
+                <input type="button" value="&#8722;" class="button  text-bg-primary text-white border-info fs-1 leads" onclick="insert('-')";>
+            </div>
+        </div>
+        <div class="clearFix  row p-2">
+            <div class="col-3">
+                <input type="button" value="1" class="button" onclick="insert(1)";>
+            </div>
+            <div class="col-3">
+                <input type="button" value="2" class="button" onclick="insert(2)";>
+            </div>
+            <div class="col-3">
+                <input type="button" value="3" class="button" onclick="insert(3)";>
+            </div>
+            <div class="col-3">
+                <input type="button" value="&#43;" class="button text-bg-primary text-white border-info fs-1 leads" onclick="insert('+')";>
+            </div>
+        </div>
+        <div class="clearFix row p-2">
+            <div class="col-3">
+                <input type="button" value="." class="button" onclick="insert('.')";>
+            </div>
+            <div class="col-3">
+                <input type="button" value="0" class="button" onclick="insert(0)";>
+            </div>
+        
+            <div class="col-6">
+                <input type="button" value="&#61;" class="button text-bg-info text-white border-info fs-1 leads" onclick="equal()";>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+
+
+</body>
+
+</html>
